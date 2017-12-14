@@ -1,7 +1,7 @@
 {
   "name": "ordered-object",
   "version": "0.0.0",
-  "description": "A module to customize object's keys order",
+  "description": "An experimental module to maintain the order of object properties",
   "author": "eight04 <eight04@gmail.com> (https://github.com/eight04)",
   "bugs": "https://github.com/eight04/ordered-object/issues",
   "license": "MIT",

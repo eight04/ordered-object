@@ -1,16 +1,18 @@
 ordered-object
 ==============
 
-An experimental module which can customize object key's order.
+An experimental module to maintain the order of object properties.
 
 Installation
 ------------
+
 ```
 npm install ordered-object
 ```
 
 Usage
 -----
+
 ```js
 const orderedObject = require("ordered-json");
 
@@ -35,9 +37,14 @@ Return an object whose keys are ordered.
 
 Recursively convert entire `object` into `OrderedObject` with `create`.
 
+Notes
+-----
+
+* https://stackoverflow.com/questions/30076219/does-es6-introduce-a-well-defined-order-of-enumeration-for-object-properties
+
 Changelog
 ---------
 
-* 0.1.0 (Dec 14, 2017)
+* 0.1.0 (Next)
 
     - First release.
