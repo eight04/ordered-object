@@ -45,6 +45,6 @@ Notes
 Changelog
 ---------
 
-* 0.1.0 (Next)
+* 0.1.0 (Dec 14, 2017)
 
     - First release.
