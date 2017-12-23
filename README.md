@@ -58,6 +58,12 @@ Notes
 Changelog
 ---------
 
+* 0.2.0 (Dec 23, 2017)
+
+  - Add: `unordered` argument to `create()`.
+  - **Change: Always create a new object in `create()`.**
+  - **Remove `__raw__` property.**
+
 * 0.1.0 (Dec 14, 2017)
 
-    - First release.
+  - First release.
