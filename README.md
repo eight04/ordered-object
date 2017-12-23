@@ -26,12 +26,25 @@ Object.values(obj2); // [3, 2, 1]
 API reference
 -------------
 
-### create(object, keys = Object.keys(object)): OrderedObject
+### create(object, keys = Object.keys(object), unordered = null): OrderedObject
 
 Return an object whose keys are ordered.
 
 * `object`: an object, which can also be an ordered-keys object (proxy).
 * `keys`: keys of the object. If `object` has a `property` which is not included in `keys`, `Object.keys(OrderedObject)` won't contain the property either. However it can still be accessed from `OrderedObject.property`.
+
+* `unordered`: if provided, do some extra normalization to unordered properties (i.e. not occured in `keys`). Possible values are:
+
+  - `trim`: trim unordered properties.
+  - `start`: move unordered properties to the start.
+  - `end`: move unordered properties to the end.
+  
+  - `keep`: keep the position (index) of unordered properties. With this option, you can only reorder the properties occured in `keys`. For example:
+    
+    ```js
+    const obj = create({a: 1, b: 2, c: 3}, ["c", "a"], "keep");
+    Object.keys(obj); // ["c", "b", "a"]
+    ```
 
 ### wrap(object): OrderedObject
 
