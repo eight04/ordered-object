@@ -58,6 +58,12 @@ describe("unordered property", () => {
     const obj3 = create(obj, ["d", "c", "b", "a"], "keep");
     assert.deepEqual(Object.values(obj3), [3, 2, 1]);
   });
+  
+  it("dup key", () => {
+    const obj2 = create(obj, ["d", "c", "b", "a"]);
+    obj2.d = 4;
+    assert.deepEqual(Object.values(obj2), [4, 3, 2, 1]);
+  });
 });
 
 describe("wrap", () => {
