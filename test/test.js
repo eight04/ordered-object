@@ -30,21 +30,33 @@ describe("unordered property", () => {
   it("trim", () => {
     const obj2 = create(obj, ["c", "a"], "trim");
     assert.deepEqual(Object.values(obj2), [3, 1]);
+    
+    const obj3 = create(obj, ["d", "c", "b", "a"], "trim");
+    assert.deepEqual(Object.values(obj3), [3, 2, 1]);
   });
   
   it("start", () => {
     const obj2 = create(obj, ["c", "a"], "start");
     assert.deepEqual(Object.values(obj2), [2, 3, 1]);
+    
+    const obj3 = create(obj, ["d", "c", "b", "a"], "start");
+    assert.deepEqual(Object.values(obj3), [3, 2, 1]);
   });
   
   it("end", () => {
     const obj2 = create(obj, ["c", "a"], "end");
     assert.deepEqual(Object.values(obj2), [3, 1, 2]);
+    
+    const obj3 = create(obj, ["d", "c", "b", "a"], "end");
+    assert.deepEqual(Object.values(obj3), [3, 2, 1]);
   });
   
   it("keep", () => {
     const obj2 = create(obj, ["c", "a"], "keep");
     assert.deepEqual(Object.values(obj2), [3, 2, 1]);
+    
+    const obj3 = create(obj, ["d", "c", "b", "a"], "keep");
+    assert.deepEqual(Object.values(obj3), [3, 2, 1]);
   });
 });
 
