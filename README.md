@@ -58,6 +58,11 @@ Notes
 Changelog
 ---------
 
+* 0.2.1 (May 6, 2018)
+
+  - Fix: some keys are stripped if `Object.keys(obj).length > order.length` and `unordered == "keep"`.
+  - Fix: use a set to avoid duplicated keys.
+
 * 0.2.0 (Dec 23, 2017)
 
   - Add: `unordered` argument to `create()`.
