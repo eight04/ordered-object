@@ -1,6 +1,6 @@
 {
   "name": "ordered-object",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "An experimental module to maintain the order of object properties",
   "author": "eight04 <eight04@gmail.com> (https://github.com/eight04)",
   "bugs": "https://github.com/eight04/ordered-object/issues",
