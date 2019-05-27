@@ -61,6 +61,10 @@ Notes
 Changelog
 ---------
 
+* 0.2.3 (May 27, 2019)
+
+  - Fix: remove useless stuff in the package.
+
 * 0.2.2 (May 27, 2019)
 
   - Fix: type error when sending `null` value to `wrap`.
