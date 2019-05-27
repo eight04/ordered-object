@@ -61,6 +61,10 @@ Notes
 Changelog
 ---------
 
+* 0.2.2 (May 27, 2019)
+
+  - Fix: type error when sending `null` value to `wrap`.
+
 * 0.2.1 (May 6, 2018)
 
   - Fix: some keys are stripped if `Object.keys(obj).length > order.length` and `unordered == "keep"`.
