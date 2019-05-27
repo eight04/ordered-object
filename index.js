@@ -1,5 +1,5 @@
 function wrap(obj) {
-  if (typeof obj === "object") {
+  if (typeof obj === "object" && obj) {
     if (Array.isArray(obj)) {
       obj = obj.map(wrap);
     } else {

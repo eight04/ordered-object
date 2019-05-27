@@ -9,16 +9,14 @@
   "dependencies": {},
   "repository": "eight04/ordered-object",
   "scripts": {
-    "lint": "eslint **/*.js --ignore-pattern dist --cache",
-    "mocha": "mocha --require intelli-espower-loader",
-    "test": "npm run lint && npm run mocha",
+    "test": "eslint \"**/*.js\" --cache && c8 --reporter=lcov mocha",
     "preversion": "npm test",
     "postversion": "git push --follow-tags && npm publish"
   },
   "devDependencies": {
-    "intelli-espower-loader": "^1.0.1",
-    "mocha": "^4.0.1",
-    "power-assert": "^1.4.4",
-    "rollup": "^0.52.1"
+    "c8": "^5.0.1",
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
+    "rollup": "^1.12.3"
   }
 }

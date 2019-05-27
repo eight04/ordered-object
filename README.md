@@ -1,6 +1,9 @@
 ordered-object
 ==============
 
+[![Build Status](https://travis-ci.com/eight04/ordered-object.svg?branch=master)](https://travis-ci.com/eight04/ordered-object)
+[![codecov](https://codecov.io/gh/eight04/ordered-object/branch/master/graph/badge.svg)](https://codecov.io/gh/eight04/ordered-object)
+
 An experimental module to maintain the order of object properties.
 
 Installation

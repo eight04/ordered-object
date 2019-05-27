@@ -1,5 +1,5 @@
 /* eslint-env mocha */
-const assert = require("power-assert");
+const assert = require("assert");
 const {wrap, create} = require("../index");
 
 describe("create", () => {
@@ -69,6 +69,15 @@ describe("unordered property", () => {
 describe("wrap", () => {
   it("deep-wrap the object", () => {
     const obj = wrap({a: {b: 1}});
+    obj.a.c = 2;
+    obj.a.d = 3;
+    delete obj.a.b;
+    assert.deepEqual(Object.values(obj.a), [2, 3]);
+  });
+  
+  it("handle null value", () => {
+    // don't foget typeof null === "object"
+    const obj = wrap({a: {b: null}});
     obj.a.c = 2;
     obj.a.d = 3;
     delete obj.a.b;
